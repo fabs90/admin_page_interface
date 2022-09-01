@@ -1,0 +1,75 @@
+/* Sidebar */
+.sidebar {
+  margin-top: -8px;
+  width: 230px;
+  background-color: #f1f1f1;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Halaman dashboard */
+.content {
+  margin-left: 200px;
+  padding-left: 16px;
+  padding-top: 20px;
+  height: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.content hr {
+  margin: 1rem;
+  margin-right: 20px;
+  margin-left: 50px;
+}
+
+/* Card */
+.display-4 {
+  font-weight: bold;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  /* Sidebar */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 2rem;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
