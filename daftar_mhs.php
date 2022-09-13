@@ -64,7 +64,7 @@ require 'connection.php';
         </li>
         <hr>
         <li class="nav-link">
-          <a class="nav-link text-white"><i class="fa-solid fa-chalkboard-user me-2"></i> Daftar Dosen</a>
+          <a class="nav-link text-white" href="daftar_dosen.php"><i class="fa-solid fa-chalkboard-user me-2"></i> Daftar Dosen</a>
         </li>
         <hr>
         <li class="nav-link">
@@ -125,6 +125,7 @@ if ($num_row != 0) {
               <td>" . $result['nim'] . "</td>
               <td>" . $result['kelas'] . "</td>
               <td>" . $result['Nama_jurusan'] . "</td>
+              <td><button type='button' class='btn btn-success'>Edit</button> <button type='button' class='btn btn-danger'>Hapus</button></td>
             </tr>
           </tbody>
         ";

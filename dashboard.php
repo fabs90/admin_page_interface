@@ -61,7 +61,7 @@
         </li>
         <hr>
         <li class="nav-link">
-          <a class="nav-link text-white"><i class="fa-solid fa-chalkboard-user me-2"></i> Daftar Dosen</a>
+          <a class="nav-link text-white" href="daftar_dosen.php"><i class="fa-solid fa-chalkboard-user me-2"></i> Daftar Dosen</a>
         </li>
         <hr>
         <li class="nav-link">
