@@ -105,14 +105,13 @@ $output = "<table class=' table table-dark table-striped'>
     <tr>
       <th scope='col'>No</th>
       <th scope='col'>Nama</th>
-      <th scope='col'>NIM</th>
-      <th scope='col'>Kelas</th>
-      <th scope='col'>Jurusan</th>
+      <th scope='col'>NIP</th>
+      <th scope='col'>Mata kuliah</th>
       <th scope='col'>Aksi</th>
     </tr>
   </thead>";
 
-$query = mysqli_query($conn, "SELECT mahasiswa.*, jurusan.nama as Nama_jurusan FROM mahasiswa inner join jurusan on mahasiswa.jurusan_id = jurusan.id;");
+$query = mysqli_query($conn, "SELECT dosen.*, matkul.nama as Matakuliah FROM dosen inner join matkul on dosen.id_mata_kuliah = matkul.id;");
 $num_row = mysqli_num_rows($query);
 
 if ($num_row != 0) {
@@ -122,9 +121,8 @@ if ($num_row != 0) {
             <tr>
               <td>" . $no . "</td>
               <td>" . $result['nama'] . "</td>
-              <td>" . $result['nim'] . "</td>
-              <td>" . $result['kelas'] . "</td>
-              <td>" . $result['Nama_jurusan'] . "</td>
+              <td>" . $result['nip'] . "</td>
+              <td>" . $result['Matakuliah'] . "</td>
               <td><button type='button' class='btn btn-success'>Edit</button> <button type='button' class='btn btn-danger'>Hapus</button></td>
             </tr>
           </tbody>
