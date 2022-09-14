@@ -112,7 +112,7 @@ $output = "<table class=' table table-dark table-striped'>
     </tr>
   </thead>";
 
-$query = mysqli_query($conn, "SELECT mahasiswa.*, jurusan.nama as Nama_jurusan FROM mahasiswa inner join jurusan on mahasiswa.jurusan_id = jurusan.id;");
+$query = mysqli_query($conn, "SELECT mahasiswa.*, jurusan.nama as Nama_jurusan FROM mahasiswa inner join jurusan on mahasiswa.jurusan_id = jurusan.id ORDER BY mahasiswa.nim ASC");
 $num_row = mysqli_num_rows($query);
 
 if ($num_row != 0) {
@@ -125,7 +125,7 @@ if ($num_row != 0) {
               <td>" . $result['nim'] . "</td>
               <td>" . $result['kelas'] . "</td>
               <td>" . $result['Nama_jurusan'] . "</td>
-              <td><button type='button' class='btn btn-success'><a href='halaman_edit.php?id=" . $result['id'] . " ' >Edit</a></button> <button type='button' class='btn btn-danger'><a href='halaman_hapus.php?id=" . $result['id'] . " '>Hapus</a></button></td>
+              <td><button type='button' class='btn btn-success'><a href='halaman_edit_mhs.php?id=" . $result['id'] . " ' >Edit</a></button> <button type='button' class='btn btn-danger'><a href='function_hapus_mhs.php?id=" . $result['id'] . " '>Hapus</a></button></td>
             </tr>
           </tbody>
         ";
