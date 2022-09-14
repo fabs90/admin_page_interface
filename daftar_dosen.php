@@ -123,7 +123,7 @@ if ($num_row != 0) {
               <td>" . $result['nama'] . "</td>
               <td>" . $result['nip'] . "</td>
               <td>" . $result['Matakuliah'] . "</td>
-              <td><button type='button' class='btn btn-success'><a href='halaman_edit.php?id=" . $result['id'] . " ' >Edit</a></button> <button type='button' class='btn btn-danger'><a href='halaman_hapus.php?id=" . $result['id'] . " '>Hapus</a></button></td>
+              <td><button type='button' class='btn btn-success'><a href='halaman_edit.php?id=" . $result['id'] . " ' >Edit</a></button> <button type='button' class='btn btn-danger'><a href='function_hapus.php?id=" . $result['id'] . " '>Hapus</a></button></td>
             </tr>
           </tbody>
         ";

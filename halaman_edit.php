@@ -27,7 +27,7 @@ $data = mysqli_fetch_array($result);
   <link rel="shortcut icon" href="fontawesome/house-solid.svg" type="image/x-icon">
 
     <!-- Css Link  -->
-    <link rel="stylesheet" href="mhs.css">
+    <link rel="stylesheet" href="halaman_edit.css">
 
      <!--load all Font Awesome styles -->
   <link href="fontawesome/css/all.css" rel="stylesheet">
@@ -62,38 +62,35 @@ $data = mysqli_fetch_array($result);
 </section>
 <!-- Akhir Navbar -->
 
-<div id="card">
-    <div id="card-content">
-      <div id="card-title">
-        <h2>LOGIN</h2>
-        <div class="underline-title"></div>
-      </div>
-      <form method="post" class="form" action="halaman_edit.php">
-        <label for="user-email" style="padding-top:13px">
-            &nbsp;Nama
-          </label>
-        <input id="user-email" class="form-content" type="text" name="username" value="<?=$data['nama']?>" required />
-        <div class="form-border"></div>
-        <label for="nip" style="padding-top:22px">&nbsp;NIP
-          </label>
-        <input id="nip" class="form-content" type="text" name="nip" value="<?=$data['nip']?>" required />
-        <br>
-        <label for="matkul" style="padding-top:22px">
-            &nbsp;Mata Kuliah
-          </label>
-        <input id="matkul" class="form-content" type="text" name="matkul"  value="<?=$data['Matakuliah']?>" required />
-        <div class="form-border"></div>
-        <input id="submit-btn" type="submit" name="submit" value="Submit" />
-
-      </form>
-    </div>
-  </div>
-
 <!-- Edit Form -->
-
-
+<div class="container container-card py-5 my-5">
+        <div class="row"  id="card">
+            <div id="card-content">
+            <div id="card-title">
+                <h2>Edit Data</h2>
+                <div class="underline-title"></div>
+            </div>
+            <form method="post" class="form" action="halaman_edit.php">
+                <label for="user-email" style="padding-top:13px; padding-right:3px;">
+                    &nbsp;Nama
+                </label>
+                <input id="user-email" class="form-content" type="text" name="username" value="<?=$data['nama']?>" required />
+                <div class="form-border"></div>
+                <label for="nip" style="padding-top:25px; margin-left:20px; padding-right:3px;">&nbsp;NIP
+                </label>
+                <input id="nip" class="form-content" type="text" name="nip" value="<?=$data['nip']?>" required />
+                <br>
+                <label for="matkul" style="padding-top:25px; padding-right:3px;">
+                    &nbsp;Mata Kuliah
+                </label>
+                <input id="matkul" class="form-content" type="text" name="matkul"  value="<?=$data['Matakuliah']?>" required style="margin-right:30px; width: 200px;" />
+                <div class="form-border"></div>
+                <input id="submit-btn" type="submit" name="submit" value="Submit" style="margin-top: 1rem ;" />
+            </form>
+            </div>
+        </div>
+</div>
 <!-- Akhir Edit Form -->
-
   </body>
     <!-- Link JS -->
     <script type="text/javascript" src="admin.js"></script>
