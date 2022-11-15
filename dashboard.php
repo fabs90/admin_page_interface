@@ -69,7 +69,7 @@
         </li>
         <hr>
         <li class="nav-link">
-          <a class="nav-link text-white"><i class="fa-solid fa-calendar me-2"></i> Jadwal Kuliah</a>
+          <a class="nav-link text-white" href="jadwal.php"><i class="fa-solid fa-calendar me-2"></i> Jadwal Kuliah</a>
         </li>
       </ul>
     </div>
