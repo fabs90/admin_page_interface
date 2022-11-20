@@ -56,17 +56,14 @@ if ($num_row != 0) {
     }
 
 }
-
 echo $output;
 ?>
+ <a name="btn-pdf" class="btn btn-success mb-2" href="pdf_mhs.php" role="button"> <i class="bi bi-file-earmark-pdf"></i> PRINT</a>
         </div>
     </div>
+
 </div>
-
-
 <!-- Akhir Table Mahasiswa -->
-
-
 </body>
     <!-- Link JS -->
     <script type="text/javascript" src="admin.js"></script>
