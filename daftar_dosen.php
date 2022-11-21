@@ -59,6 +59,10 @@ if ($num_row != 0) {
 
 echo $output;
 ?>
+
+<!-- Tombol Print PDF -->
+<a name="btn-pdf" class="btn btn-success mb-2" href="pdf_dosen.php" role="button"> <i class="bi bi-file-earmark-pdf"></i> PRINT</a>
+ <!-- Akhir tombol print pdf -->
         </div>
     </div>
 </div>
