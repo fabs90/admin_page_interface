@@ -15,6 +15,7 @@ include 'fragment/sidebar.php';
 </div>
 <!-- Akhir Jumbotron -->
 
+<!-- Table Jadwal -->
 <div class="container content">
     <div class="row">
         <div class="col-12 col-lg-10">
@@ -108,7 +109,7 @@ include 'fragment/sidebar.php';
         </div>
     </div>
 </div>
-
+<!-- Akhir dari table jadwal -->
 
 <?php
 // Layout Footer
