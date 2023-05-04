@@ -1,6 +1,7 @@
 <?php
-require 'connection.php';
-include 'fragment/header.php';
+require '../model/connection.php';
+require '../fragment/header.php';
+require '../fragment/sidebar.php';
 
 // kalau tidak ada id di query string
 if (!isset($_GET['id'])) {
@@ -18,8 +19,8 @@ $data = mysqli_fetch_array($result);
 
 <!-- Edit Form -->
 <div class="container container-card">
-        <div class="row justify-content-center" style="margin-left: 25rem; margin-top: 8rem;" id="card">
-            <div id="card-content">
+    <div class="row justify-content-center" style="margin-left: 25rem; margin-top: 8rem;" id="card">
+        <div id="card-content">
             <div id="card-title">
                 <h2>Edit Data</h2>
                 <div class="underline-title"></div>
@@ -42,25 +43,30 @@ $data = mysqli_fetch_array($result);
                 <label for="kelas" style="padding-top:25px; padding-right:3px;">
                     &nbsp;Kelas
                 </label>
-                <input id="kelas" class="form-content" type="text" name="kelas"  value="<?=$data['kelas']?>" required style="margin-right:30px; width: 200px;" />
+                <input id="kelas" class="form-content" type="text" name="kelas" value="<?=$data['kelas']?>" required
+                    style="margin-right:30px; width: 200px;" />
                 <br>
 
                 <label for="jurusan" style="padding-top:25px; padding-right:3px;">
                     &nbsp;Jurusan
                 </label>
-                <input id="jurusan" class="form-content" type="text" name="jurusan"  value="<?=$data['Jurusan']?>" required style="margin-right:30px; width: 200px;" />
+                <input id="jurusan" class="form-content" type="text" name="jurusan" value="<?=$data['Jurusan']?>"
+                    required style="margin-right:30px; width: 200px;" />
                 <div class="form-border"></div>
 
                 <input id="submit-btn" type="submit" name="submit" value="Submit" style="margin-top: 1rem ;" />
             </form>
-            </div>
         </div>
+    </div>
 </div>
 <!-- Akhir Edit Form -->
-  </body>
-    <!-- Link JS -->
-    <script type="text/javascript" src="admin.js"></script>
-    <!-- all.js loads all styles and icons -->
-  <script defer src="fontawesome/js/all.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+<!-- Link JS -->
+<script type="text/javascript" src="admin.js"></script>
+<!-- all.js loads all styles and icons -->
+<script defer src="fontawesome/js/all.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+</script>
+
 </html>

@@ -42,3 +42,8 @@
   text-decoration: none;
   color: white;
 }
+
+#pagination a {
+  color: black;
+  font-weight: bold;
+}

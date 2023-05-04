@@ -1,6 +1,6 @@
 <?php
-require 'library/fpdf.php';
-require 'connection.php';
+require '../library/fpdf.php';
+include "../model/connection.php";
 
 // inisiasi objek dan atur layout page pdf
 $pdf = new FPDF('P', 'mm', 'A4');

@@ -1,5 +1,5 @@
 <?php
-include 'connection.php';
+include "../model/connection.php";
 
 // cek jika tombol submit sudah di klik
 if (isset($_POST["submit"])) {

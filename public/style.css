@@ -44,6 +44,12 @@
   margin-left: 50px;
 }
 
+.paginate-number {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
 /* Card */
 .display-4 {
   font-weight: bold;

@@ -1,19 +1,19 @@
 <?php
-require 'connection.php';
-require 'fragment/header.php';
-require 'fragment/sidebar.php';
+require '../model/connection.php';
+require '../fragment/header.php';
+require '../fragment/sidebar.php';
 ?>
 
 
 
 <!-- Jumbotron -->
 <div class="container pt-5 text-center">
-  <div class="row" style="margin-left: 300px ;">
-    <div class="col-12 col-lg-10">
-      <h3><i class="fa-solid fa-chalkboard-user me-2"></i><b>Daftar Dosen</b></h3>
-      <hr>
+    <div class="row" style="margin-left: 300px ;">
+        <div class="col-12 col-lg-10">
+            <h3><i class="fa-solid fa-chalkboard-user me-2"></i><b>Daftar Dosen</b></h3>
+            <hr>
+        </div>
     </div>
-  </div>
 </div>
 <!-- Akhir Jumbotron -->
 
@@ -21,7 +21,7 @@ require 'fragment/sidebar.php';
 <div class="container content">
     <div class="row justify-content-center" style="margin-left: 1rem ;">
         <div class="col-12 col-lg-10">
-<?php
+            <?php
 $no = 1;
 $output = "";
 
@@ -60,9 +60,10 @@ if ($num_row != 0) {
 echo $output;
 ?>
 
-<!-- Tombol Print PDF -->
-<a name="btn-pdf" class="btn btn-success mb-2" href="pdf_dosen.php" role="button"> <i class="bi bi-file-earmark-pdf"></i> PRINT</a>
- <!-- Akhir tombol print pdf -->
+            <!-- Tombol Print PDF -->
+            <a name="btn-pdf" class="btn btn-success mb-2" href="pdf_dosen.php" role="button"> <i
+                    class="bi bi-file-earmark-pdf"></i> PRINT</a>
+            <!-- Akhir tombol print pdf -->
         </div>
     </div>
 </div>
@@ -70,9 +71,12 @@ echo $output;
 
 
 </body>
-    <!-- Link JS -->
-    <script type="text/javascript" src="admin.js"></script>
-    <!-- all.js loads all styles and icons -->
-  <script defer src="fontawesome/js/all.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!-- Link JS -->
+<script type="text/javascript" src="admin.js"></script>
+<!-- all.js loads all styles and icons -->
+<script defer src="fontawesome/js/all.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+</script>
+
 </html>
